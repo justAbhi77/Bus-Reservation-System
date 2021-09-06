@@ -179,6 +179,7 @@ public class c1 {
 		JButton btnNewButton = new JButton("Next");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				frmIntroduction.dispose();
 				c2.main(null);
 			}
 		});

@@ -71,9 +71,6 @@ public class c3 {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	private void initialize() {
 		int a[] = new int[32];
 		frmSelectSeats = new JFrame();
@@ -92,7 +89,7 @@ public class c3 {
 		JLabel label = new JLabel("");
 		label.setToolTipText("Vacant Seats");
 		label.setBounds(30, 50, 50, 50);
-		Image img = new ImageIcon(this.getClass().getResource("/seat.gif")).getImage();
+		Image img = new ImageIcon(this.getClass().getResource("/img/seat.gif")).getImage();
 		label.setIcon(new ImageIcon(img));
 		frmSelectSeats.getContentPane().add(label);
 
@@ -106,7 +103,7 @@ public class c3 {
 		label_1 = new JLabel("");
 		label_1.setToolTipText("Booked Seats");
 		label_1.setBounds(403, 50, 50, 50);
-		Image img1 = new ImageIcon(this.getClass().getResource("/seat-booked.gif")).getImage();
+		Image img1 = new ImageIcon(this.getClass().getResource("/img/seat-booked.gif")).getImage();
 		label_1.setIcon(new ImageIcon(img1));
 		frmSelectSeats.getContentPane().add(label_1);
 
@@ -651,6 +648,7 @@ public class c3 {
 			public void actionPerformed(ActionEvent arg0) {
 				String temp1 = "The total number of seats booked are " + f + ".You booked: " + c;
 				JOptionPane.showMessageDialog(null, temp1);
+				frmSelectSeats.dispose();
 				c4.in(a);
 				c4.main(null);
 				c = 0;

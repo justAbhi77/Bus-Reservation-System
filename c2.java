@@ -47,6 +47,7 @@ public class c2 {
         JButton btnNewButton = new JButton("Next");
         btnNewButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+                frmBusReservationSystem.dispose();
                 c3.main(null);
             }
         });

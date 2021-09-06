@@ -13,9 +13,6 @@ public class c5 {
 	private JTextField textField;
 	private JButton btnNewButton;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -29,38 +26,32 @@ public class c5 {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public c5() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	private void initialize() {
 		frmPaymentPortal = new JFrame();
 		frmPaymentPortal.setTitle("Payment portal");
 		frmPaymentPortal.setBounds(100, 100, 450, 300);
 		frmPaymentPortal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmPaymentPortal.getContentPane().setLayout(null);
-		
+
 		txtYouHaveTo = new JTextField();
 		txtYouHaveTo.setEditable(false);
 		txtYouHaveTo.setText("You have to pay:");
 		txtYouHaveTo.setBounds(46, 30, 102, 20);
 		frmPaymentPortal.getContentPane().add(txtYouHaveTo);
 		txtYouHaveTo.setColumns(10);
-		
-		String temp=Integer.toString(c4.fare);
+
+		String temp = Integer.toString(c4.fare);
 		textField = new JTextField();
 		textField.setEditable(false);
 		textField.setText(temp);
 		textField.setBounds(182, 30, 110, 20);
 		frmPaymentPortal.getContentPane().add(textField);
 		textField.setColumns(10);
-		
+
 		btnNewButton = new JButton("Pay ");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {

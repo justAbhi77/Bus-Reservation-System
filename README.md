@@ -3,7 +3,7 @@
 This a very simple bus reservation system using java swing library.
 
   ## Setup
-To run the program open a command prompt and type the following(in order):
+To run the program open command prompt and type the following(in order):
 
     javac *.java
     java c1
